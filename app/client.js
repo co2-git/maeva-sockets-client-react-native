@@ -1,7 +1,9 @@
 import Client from 'maeva-sockets-client';
 import {WebSocket} from 'react-native';
 
-export default class MaevaSockets_NodeClient extends Client {
+console.log({WebSocket});
+
+export default class MaevaSockets_ReactNativeClient extends Client {
   constructor(url) {
     const client = new WebSocket(url);
     client.on = (event, cb) => {
